@@ -30,7 +30,7 @@
         <div class="flipped">
 
 
-            <!-- Front Side of Fliper-->
+            <!-- Front Side of Flipper-->
             <div class="front">
                 <h1>ToDo-List</h1>
                     <!-- ICONS -->
@@ -38,6 +38,20 @@
                     <i class="fa fa-list fa-4x" aria-hidden="true"></i>
                     <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
             </div> <!-- END front section-->
+
+            <!-- Back side of Flipper-->
+            <div class="back">
+                <h1>Add your Checklist</h1>
+
+            <div class="row">
+                <!-- Input Field and Add Button-->
+                <div class="col-md-12">
+                    <input type="text" id="todoInput" value=""> 
+                    <button type="button" class="btn btn-primary" onclick="addItem()" id="addButton">Add</button>
+                    <button type="button" class="btn btn-primary" onclick="clearList()" id="clearButton">Clear</button></div> <!-- end col-md -12 -->
+            </div>
+
+            </div> <!-- END Back section-->
 
         </div> <!-- END flipped section-->
 
