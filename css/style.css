@@ -22,7 +22,7 @@ body {
     width : 35.5%;
     height : 550px;
     margin : 0 auto;
-    margin-top : 250px;
+    margin-top : 236px;
     text-align : center;
     perspective : 1000px; /* 3D positioning */
     } 
@@ -73,7 +73,7 @@ body {
 	          FRONT 
 	------------------------------  */
 h1 {
-    color : black;
+    color : wheat;
     }
     .fa {
     padding : 10px;
