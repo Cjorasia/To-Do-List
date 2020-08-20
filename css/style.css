@@ -1,0 +1,14 @@
+  
+	/* ---------------------------
+	             BODY STYLE 
+    ----------------------------- */
+    
+body {
+    background-color : #F9F9FB;
+    font-family : 'Roboto Condensed', sans-serif;
+    font-size : 30px;
+    opacity : 1;
+    color : #FFFFFF;
+    background : url("background.jpeg");
+    background-size : cover;
+    } 
