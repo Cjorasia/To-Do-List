@@ -94,3 +94,21 @@ h1 {
     height : 50px;
     color : #FFFFFF;
     } 
+
+/* Btn styles for add and clear buttons */
+.btn {
+	background-color : transparent;
+	border : black solid 2px;
+	border-radius : 10px;
+	width : 72px;
+	height : 42px;
+	text-align : center;
+	color : black;
+	font-size : 15px;
+	} 
+
+.btn:hover {
+background-color : #ebaea3;
+color : black;
+border : none;
+}
