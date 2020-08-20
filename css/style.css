@@ -55,8 +55,19 @@ body {
 .front, .back {
 	backface-visibility : hidden;
 	position : absolute;
+    } 
+    
+/* front pane placed above back with z index */
+.front {
+	z-index : 1;
+	transform : rotateY(0deg);
+	text-align : center;
 	} 
 
+/* back side rotated to 180 deg to place at the back*/
+.back {
+    transform : rotateY(180deg);
+    } 
 
 /*  --------------------------
 	          FRONT 
@@ -70,4 +81,4 @@ h1 {
     }
     .fa.fa-list {
     color : black;
-    } 
+    }
