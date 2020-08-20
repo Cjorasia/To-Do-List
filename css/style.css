@@ -58,8 +58,8 @@ body {
     } 
     
 /* front pane placed above back with z index */
-.front {
-	z-index : 1;
+.front { 
+	z-index : 1;   /* Order */
 	transform : rotateY(0deg);
 	text-align : center;
 	} 
@@ -82,3 +82,15 @@ h1 {
     .fa.fa-list {
     color : black;
     }
+
+/*  --------------------------
+	         BACK
+	----------------------------  */
+
+#todoInput {
+    border : none;
+    background-color : #ebaea3;
+    width : 70%;
+    height : 50px;
+    color : #FFFFFF;
+    } 
