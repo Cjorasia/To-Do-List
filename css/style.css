@@ -24,5 +24,19 @@ body {
     margin : 0 auto;
     margin-top : 250px;
     text-align : center;
-    perspective : 1000px;
+    perspective : 1000px; /* 3D positioning */
+    } 
+
+/*  --------------------------
+	          FRONT 
+	------------------------------  */
+h1 {
+    color : black;
+    }
+    .fa {
+    padding : 10px;
+    color : #F26345;
+    }
+    .fa.fa-list {
+    color : black;
     } 
