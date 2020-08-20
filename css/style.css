@@ -75,12 +75,8 @@ body {
 h1 {
     color : wheat;
     }
-    .fa {
-    padding : 10px;
-    color : #F26345;
-    }
-    .fa.fa-list {
-    color : black;
+    .fas {
+    padding : 30px;
     }
 
 /*  --------------------------
@@ -89,7 +85,7 @@ h1 {
 
 #todoInput {
     border : none;
-    background-color : #ebaea3;
+    background-color :wheat;
     width : 70%;
     height : 50px;
     color : #FFFFFF;
@@ -108,7 +104,9 @@ h1 {
 	} 
 
 .btn:hover {
-background-color : #ebaea3;
+background-color : wheat;
 color : black;
 border : none;
+border : black solid 3px;
+border-radius : 10px;
 }
