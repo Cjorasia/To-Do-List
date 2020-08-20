@@ -12,3 +12,17 @@ body {
     background : url("background.jpeg");
     background-size : cover;
     } 
+
+
+/* ---------------------------
+	        MAIN CONTAINER
+	----------------------------- */
+
+#main-container {
+    width : 35.5%;
+    height : 550px;
+    margin : 0 auto;
+    margin-top : 250px;
+    text-align : center;
+    perspective : 1000px;
+    } 
