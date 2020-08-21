@@ -14,5 +14,16 @@ function addItem(){
         var text = document.createTextNode(task); // create text
         li.appendChild(text); // appended text node to list
         ul.appendChild(li); // appended list to ul *** HTML STRUCTURE ***
+    
     }
 }
+
+// function clearList
+
+function clearList() {
+    var ul = document.getElementById("myUl");
+    ul.innerHTML = "";
+    //alert(taskList.length);
+    taskList.splice(0, taskList.length);
+    //alert(taskList.length);
+} // end of function
