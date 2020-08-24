@@ -1,29 +1,31 @@
-// array to store tasks
-var tasklist = [];
+// Fetching UI Elements
+const myUl = document.querySelector("#myUl"),
+  todoInput = document.querySelector("#todoInput"),
+  addButton = document.querySelector("#addButton"),
+  clearButton = document.querySelector("#clearButton");
 
-function addItem(){
+// Adding Event listeners on the elements
+const loadEventListener = () => {
+  addButton.addEventListener("click", addTask);
 
-    var task = getElementById("todoInput").value; // Get access of Input value and store in task variable
-    var ul = getElementById("myUl");
+  clearButton.addEventListener("click", clearTasks);
+};
 
-    if (tasklist.length <= 8){
-       
-        tasklist.push(task);
+const addTask = () => {
+  const task = todoInput.value;
 
-        var li = document.createElement("li"); // create list tag
-        var text = document.createTextNode(task); // create text
-        li.appendChild(text); // appended text node to list
-        ul.appendChild(li); // appended list to ul *** HTML STRUCTURE ***
-    
-    }
-}
+  // creating task in the UI
+  const li = document.createElement("li");
+  li.appendChild(document.createTextNode(todoInput.value));
 
-// function clearList
+  // Appending parent child
+  myUl.appendChild(li);
+};
 
-function clearList() {
-    var ul = document.getElementById("myUl");
-    ul.innerHTML = "";
-    //alert(taskList.length);
-    taskList.splice(0, taskList.length);
-    //alert(taskList.length);
-} // end of function
+const clearTasks = () => {
+  while (myUl.firstChild) {
+    myUl.removeChild(myUl.firstChild);
+  }
+};
+
+loadEventListener();
