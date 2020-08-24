@@ -9,6 +9,8 @@ const loadEventListener = () => {
   addButton.addEventListener("click", addTask);
 
   clearButton.addEventListener("click", clearTasks);
+
+
 };
 
 const addTask = () => {
@@ -20,7 +22,13 @@ const addTask = () => {
 
   // Appending parent child
   myUl.appendChild(li);
+
+  reset();
 };
+
+reset = () =>{
+  todoInput.value = "";
+}
 
 const clearTasks = () => {
   while (myUl.firstChild) { // Because while loop is faster than "innerHTML = '' "
