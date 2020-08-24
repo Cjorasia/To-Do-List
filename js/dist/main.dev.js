@@ -17,7 +17,22 @@ var addTask = function addTask() {
   var li = document.createElement("li");
   li.appendChild(document.createTextNode(todoInput.value)); // Appending parent child
 
-  myUl.appendChild(li);
+  myUl.appendChild(li); //adding checkmark
+
+  var checkMark = document.createElement("button");
+  checkMark.innerHTML = "&check;"; // adding classname
+
+  checkMark.className = "listItemButton"; // setting attribute
+
+  checkMark.setAttribute("onclick", "checkMe()"); // Appending parent child4
+
+  li.appendChild(checkMark); // Adding crossmark
+
+  var crossMark = document.createElement("button");
+  crossMark.innerHTML = "&#x2715";
+  crossMark.className = "listItemButton";
+  crossMark.setAttribute("onclick", "removeMe()");
+  li.appendChild(crossMark);
   reset();
 };
 
