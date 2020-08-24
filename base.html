@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="">
-    <meta name="author" content="Edex01">
+    <meta name="description" content="" />
+    <meta name="author" content="Edex01" />
     <title>ToDo List</title>
 
     <!-- Font Awesome icons -->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Custom CSS -->
-     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-    
+  <body>
     <!-- Creating main container-->
     <div class="flip-container" id="main-container">
+      <!--Flipped section-->
+      <div class="flipped">
+        <!-- Front Side of Flipper-->
+        <div class="front">
+          <h1>To-Do-List</h1>
+          <!-- ICONS -->
+          <i
+            class="fas fa-book-reader"
+            style="font-size: 90px; color: red;"
+          ></i>
+          <i
+            class="fas fa-clipboard-list"
+            style="font-size: 110px; color: black;"
+          ></i>
+          <i
+            class="fas fa-shopping-cart"
+            style="font-size: 90px; color: red;"
+          ></i>
+        </div>
+        <!-- END front section-->
 
-        <!--Flipped section-->
-        <div class="flipped">
+        <!-- Back side of Flipper-->
+        <div class="back">
+          <h1>ADD TASK</h1>
 
-            <!-- Front Side of Flipper-->
-            <div class="front">
-                <h1>To-Do-List</h1>
-                    <!-- ICONS -->
-                    <i class='fas fa-book-reader' style='font-size:90px;color:red'></i>
-                    <i class='fas fa-clipboard-list' style='font-size:110px;color:black'></i>
-                    <i class='fas fa-shopping-cart' style='font-size:90px;color:red'></i>
-            </div> <!-- END front section-->
+          <div class="row">
+            <!-- Input Field and Add Button-->
+            <div class="col-md-12">
+              <input type="text" id="todoInput" />
+              <button type="button" class="btn btn-primary" id="addButton">
+                Add
+              </button>
+              <button type="button" class="btn btn-primary" id="clearButton">
+                Clear
+              </button>
+            </div>
+            <!-- end col-md -12 -->
 
-            <!-- Back side of Flipper-->
-            <div class="back">
-                <h1>ADD TASK</h1>
+            <!-- List view section-->
+            <div class="col-md-12" id="listItems">
+              <ul id="myUl"></ul>
+            </div>
+            <!-- END list view section-->
+          </div>
+          <!-- END row-->
+        </div>
+        <!-- END Back section-->
+      </div>
+      <!-- END flipped section-->
+    </div>
+    <!-- END main-container -->
 
-            <div class="row">
-
-                <!-- Input Field and Add Button-->
-                <div class="col-md-12">
-                    <input type="text" id="todoInput" value=""> 
-                    <button type="button" class="btn btn-primary" onclick="addItem()" id="addButton">Add</button>
-                    <button type="button" class="btn btn-primary" onclick="clearList()" id="clearButton">Clear</button>
-                </div> <!-- end col-md -12 -->
-
-                <!-- List view section-->
-                <div class="col-md-12" id="listItems">
-                    <ul id="myUl"> </ul>
-                </div> <!-- END list view section-->
-
-            </div> <!-- END row-->
-
-            </div> <!-- END Back section-->
-
-        </div> <!-- END flipped section-->
-
-    </div> <!-- END main-container -->
-
-
-        <!-- custom JavaScript -->
-        <script src="js/main.js"></script>
-        <script src="js/tether.min.js"></script>
-
-</body>
-
+    <!-- custom JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
