@@ -23,9 +23,10 @@ const addTask = () => {
 };
 
 const clearTasks = () => {
-  while (myUl.firstChild) {
+  while (myUl.firstChild) { // Because while loop is faster than "innerHTML = '' "
     myUl.removeChild(myUl.firstChild);
   }
 };
 
+// Instantiating Event Listeners
 loadEventListener();
