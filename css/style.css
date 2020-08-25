@@ -4,11 +4,9 @@
     ----------------------------- */
     
 body {
-    background-color : #F9F9FB;
     font-family : 'Roboto Condensed', sans-serif;
     font-size : 30px;
     opacity : 1;
-    color : #FFFFFF;
     background : url("Background.jpg");
     background-size: 100% 100%;
     }
@@ -21,7 +19,7 @@ body {
 #main-container {
     width : 35.5%;
     height : 550px;
-    margin : 0 auto;
+    margin :  auto;
     margin-top : 236px;
     text-align : center;
     perspective : 1000px; /* 3D positioning */
@@ -73,10 +71,10 @@ body {
 	          FRONT 
 	------------------------------  */
 h1 {
-    color : wheat;
+    color : rgb(151, 151, 216);
     }
     .fas {
-    padding : 30px;
+    padding : 20px;
     }
 
 /*  --------------------------
@@ -85,10 +83,10 @@ h1 {
 
 #todoInput {
     border : none;
-    background-color :wheat;
+    background-color: rgb(151, 151, 216);
     width : 70%;
     height : 50px;
-    color : black;
+    color :black;
     } 
 
 /* Btn styles for add and clear buttons */
@@ -104,7 +102,7 @@ h1 {
 	} 
 
 .btn:hover {
-background-color : wheat;
+background-color :rgb(151, 151, 216);
 color : black;
 border : none;
 border : black solid 3px;
@@ -112,5 +110,16 @@ border-radius : 10px;
 }
 
 ul{
-    color: black;
+    color: rgb(151, 151, 216);
+}
+  
+@media screen and (min-width: 600px) {
+div.flip-container {
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width: 60px) {
+div.flip-container {
+    font-size: 30px;
 }
