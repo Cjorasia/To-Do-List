@@ -29,7 +29,7 @@ const addTask = () => {
   // adding classname
   checkMark.className = "listItemButton";
   // setting attribute
-  checkMark.setAttribute("onclick", "checkMe()");
+  checkMark.setAttribute("onclick", "checkMe(this)");
   // Appending parent child4
   li.appendChild(checkMark);
 
@@ -52,6 +52,16 @@ const clearTasks = () => {
     myUl.removeChild(myUl.firstChild);
   }
 };
+
+checkMe = (item) =>{
+  // select parent element
+  var liTag = item.parentElement;
+
+  //
+  liTag.style.textDecoration = "line-through";
+
+
+}
 
 // Instantiating Event Listeners
 loadEventListener();

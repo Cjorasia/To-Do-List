@@ -24,7 +24,7 @@ var addTask = function addTask() {
 
   checkMark.className = "listItemButton"; // setting attribute
 
-  checkMark.setAttribute("onclick", "checkMe()"); // Appending parent child4
+  checkMark.setAttribute("onclick", "checkMe(this)"); // Appending parent child4
 
   li.appendChild(checkMark); // Adding crossmark
 
@@ -45,6 +45,13 @@ var clearTasks = function clearTasks() {
     // Because while loop is faster than "innerHTML = '' "
     myUl.removeChild(myUl.firstChild);
   }
+};
+
+checkMe = function checkMe(item) {
+  // select parent element
+  var liTag = item.parentElement; //
+
+  liTag.style.textDecoration = "line-through";
 }; // Instantiating Event Listeners
 
 
