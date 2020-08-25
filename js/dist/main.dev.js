@@ -66,7 +66,7 @@ removeMe = function removeMe(item) {
   alert(taskList);
 };
 
-enterKey = function enterKey() {
+function enterKey() {
   // get input
   var input = document.getElementById("todoInput"); // onKey up
 
@@ -76,7 +76,7 @@ enterKey = function enterKey() {
       addItem();
     }
   };
-};
+}
 
 enterKey(); // Instantiating Event Listeners
 

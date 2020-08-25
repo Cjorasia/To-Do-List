@@ -77,7 +77,7 @@ removeMe = (item) => {
 
 }
 
-enterKey = () => {
+function enterKey() {
 
   // get input
   var input = document.getElementById("todoInput");

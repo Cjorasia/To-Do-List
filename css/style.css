@@ -10,7 +10,7 @@ body {
     opacity : 1;
     color : #FFFFFF;
     background : url("Background.jpg");
-    background-size : cover;
+    background-size: 100% 100%;
     }
 
 
@@ -109,4 +109,8 @@ color : black;
 border : none;
 border : black solid 3px;
 border-radius : 10px;
+}
+
+ul{
+    color: black;
 }
