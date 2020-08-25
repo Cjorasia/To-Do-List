@@ -64,7 +64,20 @@ removeMe = function removeMe(item) {
 
   taskList.pop();
   alert(taskList);
-}; // Instantiating Event Listeners
+};
 
+enterKey = function enterKey() {
+  // get input
+  var input = document.getElementById("todoInput"); // onKey up
+
+  input.onkeyup = function (key) {
+    // 13 represents Enter
+    if (key.keyCode === 13) {
+      addItem();
+    }
+  };
+};
+
+enterKey(); // Instantiating Event Listeners
 
 loadEventListener();
