@@ -37,7 +37,7 @@ const addTask = () => {
   var crossMark = document.createElement("button");
   crossMark.innerHTML = "&#x2715"; 
   crossMark.className = "listItemButton"; 
-  crossMark.setAttribute("onclick", "removeMe()");
+  crossMark.setAttribute("onclick", "removeMe(this)");
   li.appendChild(crossMark);
 
   reset();
@@ -60,6 +60,20 @@ checkMe = (item) =>{
   //
   liTag.style.textDecoration = "line-through";
 
+}
+
+removeMe = (item) => {
+
+  // getting parentElement
+  var liTag = item.parentElement;
+  // getting parentElement
+  var ulTag = liTag.parentElement;
+  // deleting childElement i.e liTag
+  ulTag.removeChild(liTag);
+
+  // delete from array
+  taskList.pop();
+  alert(taskList);
 
 }
 
