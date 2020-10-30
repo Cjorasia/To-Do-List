@@ -18,8 +18,10 @@ const addTask = () => {
 
   // creating task in the UI
   const li = document.createElement("li");
-  li.appendChild(document.createTextNode(todoInput.value));
 
+  localStorage.setItem("task", todoInput.value )
+  li.appendChild(document.createTextNode());
+  
   // Appending parent child
   myUl.appendChild(li);
 
