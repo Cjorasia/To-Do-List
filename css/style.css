@@ -85,7 +85,8 @@ h1 {
     background-color: grey;
     width : 70%;
     height : 50px;
-    color :black;
+    color :white;
+    font-size: larger;
     } 
 
 /* Btn styles for add and clear buttons */
