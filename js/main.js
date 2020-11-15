@@ -10,17 +10,17 @@ const loadEventListener = () => {
 
   clearButton.addEventListener("click", clearTasks);
 
-
 };
 
 const addTask = () => {
+  console.log("ADD TASK");
   const task = todoInput.value;
 
   // creating task in the UI
   const li = document.createElement("li");
 
   localStorage.setItem("task", todoInput.value )
-  li.appendChild(document.createTextNode());
+  li.appendChild(document.createTextNode(task));
   
   // Appending parent child
   myUl.appendChild(li);
