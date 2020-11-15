@@ -70,7 +70,7 @@ body {
 	          FRONT 
 	------------------------------  */
 h1 {
-    color : rgb(151, 151, 216);
+    color : navy;
     }
     .fas {
     padding : 20px;
@@ -82,7 +82,7 @@ h1 {
 
 #todoInput {
     border : none;
-    background-color: rgb(151, 151, 216);
+    background-color: grey;
     width : 70%;
     height : 50px;
     color :black;
