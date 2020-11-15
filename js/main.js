@@ -12,6 +12,8 @@ const loadEventListener = () => {
 
 };
 
+
+
 const addTask = () => {
   console.log("ADD TASK");
   const task = todoInput.value;
@@ -80,7 +82,7 @@ removeMe = (item) => {
 }
 
 function enterKey() {
-
+  console.log("ENTER KEY PRESSED");
   // get input
   var input = document.getElementById("todoInput");
   // onKey up
@@ -88,7 +90,7 @@ function enterKey() {
 
   // 13 represents Enter
       if(key.keyCode === 13){
-          addItem();
+        addTask();
       }
   } 
 }
