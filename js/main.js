@@ -124,20 +124,10 @@ function getHistory(e){
   allTasks.forEach(function (task) {
 
         // using materialize
-      const output = ` <h1>email: ${task}</h1>`
-
+      const output = ` <p> ${task}</p>`;
+      document.getElementById('main-container').innerHTML = output;
       console.log(task)
-  })
-
-
-
- ;
-
-
-
-
-
-
+  }) ;
 
 }
 
