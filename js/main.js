@@ -121,11 +121,19 @@ console.log(atl);
 // get history for history button
 function getHistory(e){
   e.preventDefault()
-  const allTasks = JSON.parse(localStorage.getItem('allTasks'))
-  let  output = ``;
-  allTasks.forEach(function (task) {
 
-        // using materialize
+
+  if (localStorage.getItem('allTasks') === null) {
+    allTasks = []
+} else {
+    allTasks = JSON.parse(localStorage.getItem('allTasks'))
+}
+
+
+  let  output = ``;
+
+
+  allTasks.forEach(function (task) {
       
       output = output +` <p> ${task}</p>`;
       
