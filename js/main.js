@@ -10,6 +10,7 @@ const loadEventListener = () => {
   addButton.addEventListener("click", addTask);
 
   clearButton.addEventListener("click", clearTasks);
+  historyButton.addEventListener("click", getHistory)
 
 };
 
@@ -114,6 +115,16 @@ enterKey();
 // getting all tasks from history
 const atl = localStorage.getItem('allTasks');
 console.log(atl);
+
+// get history for history button
+function getHistory(e){
+  e.preventDefault()
+  const allTasks = JSON.parse(localStorage.getItem('allTasks'))
+  allTasks.forEach(function (task) {
+      console.log(task)
+  })
+
+}
 
 // Instantiating Event Listeners
 loadEventListener();
