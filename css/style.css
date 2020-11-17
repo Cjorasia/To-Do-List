@@ -105,6 +105,10 @@ h1 {
     color: white;
 }
 
+#ClearHistory{
+    color: white;
+}
+
 .btn:hover {
 background-color :rgb(151, 151, 216);
 color : black;
