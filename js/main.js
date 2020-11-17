@@ -47,28 +47,7 @@ const addTask = () => {
   li.appendChild(crossMark);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// HIstory
   let allTasks;
   if (localStorage.getItem('allTasks') === null) {
       allTasks = []
@@ -80,37 +59,6 @@ const addTask = () => {
   localStorage.setItem('allTasks', JSON.stringify(allTasks))
   alert('The Task is saved in history')
 
-  console.log(allTasks)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   reset();
 };
 
@@ -162,6 +110,10 @@ function enterKey() {
   } 
 }
 enterKey();
+
+// getting all tasks from history
+const atl = localStorage.getItem('allTasks');
+console.log(atl);
 
 // Instantiating Event Listeners
 loadEventListener();
