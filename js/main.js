@@ -3,6 +3,7 @@ const myUl = document.querySelector("#myUl"),
   todoInput = document.querySelector("#todoInput"),
   addButton = document.querySelector("#addButton"),
   clearButton = document.querySelector("#clearButton");
+  historyButton = document.querySelector('#HistoryButton');
 
 // Adding Event listeners on the elements
 const loadEventListener = () => {
@@ -12,8 +13,6 @@ const loadEventListener = () => {
 
 };
 
-
-
 const addTask = () => {
   console.log("ADD TASK");
   const task = todoInput.value;
@@ -21,7 +20,10 @@ const addTask = () => {
   // creating task in the UI
   const li = document.createElement("li");
 
+
+  // saving to local storage
   localStorage.setItem("task", todoInput.value )
+
   li.appendChild(document.createTextNode(task));
   
   // Appending parent child
@@ -44,6 +46,71 @@ const addTask = () => {
   crossMark.setAttribute("onclick", "removeMe(this)");
   li.appendChild(crossMark);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  let allTasks;
+  if (localStorage.getItem('allTasks') === null) {
+      allTasks = []
+  } else {
+      allTasks = JSON.parse(localStorage.getItem('allTasks'))
+      console.log("JSON saved");
+  }
+  allTasks.push(task)
+  localStorage.setItem('allTasks', JSON.stringify(allTasks))
+  alert('The Task is saved in history')
+
+  console.log(allTasks)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   reset();
 };
 
@@ -95,7 +162,6 @@ function enterKey() {
   } 
 }
 enterKey();
-
 
 // Instantiating Event Listeners
 loadEventListener();
