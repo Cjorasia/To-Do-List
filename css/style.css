@@ -99,7 +99,11 @@ h1 {
 	text-align : center;
 	color : black;
 	font-size : 15px;
-	} 
+    } 
+    
+#HistoryButton{
+    color: white;
+}
 
 .btn:hover {
 background-color :rgb(151, 151, 216);
