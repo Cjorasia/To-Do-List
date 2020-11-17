@@ -120,9 +120,24 @@ console.log(atl);
 function getHistory(e){
   e.preventDefault()
   const allTasks = JSON.parse(localStorage.getItem('allTasks'))
+
   allTasks.forEach(function (task) {
+
+        // using materialize
+      const output = ` <h1>email: ${task}</h1>`
+
       console.log(task)
   })
+
+
+
+ ;
+
+
+
+
+
+
 
 }
 
