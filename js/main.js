@@ -4,13 +4,15 @@ const myUl = document.querySelector("#myUl"),
   addButton = document.querySelector("#addButton"),
   clearButton = document.querySelector("#clearButton");
   historyButton = document.querySelector('#HistoryButton');
+  ClearHistory = document.querySelector('#ClearHistory');
 
 // Adding Event listeners on the elements
 const loadEventListener = () => {
   addButton.addEventListener("click", addTask);
 
   clearButton.addEventListener("click", clearTasks);
-  historyButton.addEventListener("click", getHistory)
+  historyButton.addEventListener("click", getHistory);
+  ClearHistory.addEventListener("click", ClrHis)
 
 };
 
@@ -130,6 +132,11 @@ function getHistory(e){
       console.log(task)
   }) ;
   document.getElementById('main-container').innerHTML = output;
+}
+
+function ClrHis(){
+  localStorage.clear();
+  alert("History Cleared !!!");
 }
 
 // Instantiating Event Listeners
